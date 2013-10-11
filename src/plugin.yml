@@ -1,0 +1,9 @@
+name: ChestViewer
+main: main.java.net.bigbadcraft.chestviewer.ViewerPlugin
+version: 1.0
+commands:
+  viewchestfor:
+    description: Main command
+    permission: chestviewer.admin
+    permission-message: You do not have <permission>
+    default: op
