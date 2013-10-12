@@ -1,7 +1,5 @@
 package main.java.net.bigbadcraft.chestviewer;
 
-import main.java.net.bigbadcraft.chestviewer.command.ViewCommand;
-import main.java.net.bigbadcraft.chestviewer.listeners.ChestViewerListener;
 import main.java.net.bigbadcraft.chestviewer.utils.Methods;
 
 import org.bukkit.plugin.java.JavaPlugin;
@@ -37,7 +35,7 @@ public class ViewerPlugin extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		methods.clearMaps();
+		methods.removeChestContents();
 	}
 	
 }

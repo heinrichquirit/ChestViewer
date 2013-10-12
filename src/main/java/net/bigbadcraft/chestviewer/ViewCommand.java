@@ -1,4 +1,4 @@
-package main.java.net.bigbadcraft.chestviewer.command;
+package main.java.net.bigbadcraft.chestviewer;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -8,7 +8,6 @@ import org.bukkit.entity.Player;
 
 public class ViewCommand implements CommandExecutor {
 
-	private final ChatColor GREEN = ChatColor.GREEN;
 	private final ChatColor RED = ChatColor.RED;
 	
 	@Override
