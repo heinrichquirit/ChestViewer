@@ -64,6 +64,7 @@ public class ChestViewerListener implements Listener {
 			if (clickedBlock.getType() == Material.WALL_SIGN || clickedBlock.getType() == Material.SIGN_POST) {
 				Sign sign = (Sign) clickedBlock.getState();
 				Block chestBlock = getAttachedBlock(Material.WALL_SIGN, clickedBlock);
+				if (chestBlock == null) return;
 				if (chestBlock.getType() == Material.CHEST) {
 					Chest chest = (Chest) chestBlock.getState();
 					if (sign.getLine(0).equals(YELLOW + "Everyone")) {

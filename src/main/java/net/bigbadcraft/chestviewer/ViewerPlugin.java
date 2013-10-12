@@ -29,7 +29,7 @@ public class ViewerPlugin extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		methods = new Methods();
-		getCommand("viewchestfor").setExecutor(new ViewCommand());
+		getCommand("viewchestfor").setExecutor(new ViewCommand(this));
 		getServer().getPluginManager().registerEvents(new ChestViewerListener(this), this);
 	}
 	
