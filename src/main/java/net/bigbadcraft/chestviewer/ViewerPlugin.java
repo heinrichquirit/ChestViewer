@@ -6,24 +6,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ViewerPlugin extends JavaPlugin {
 	
-	// Get the user
-	// Get the user's block that's been looked at
-	// Get the contents
-	// Temporarily save the contents in an inventory type
-	// and send the view to selected user
-	
-	// Use a sign
-	// Check if the sign on the block's second line is equal to View Only
-	// If the chest has a view only sign
-	// Users can click the chest and view the temporarily saved contents
-	
-	// Events
-	// InventoryClickEvent
-	// SignChangeEvent
-	// PlayerInteractedEvent
-	
-	// CHECK FOR DOUBLE CHESTS
-	
 	public Methods methods;
 	
 	@Override
@@ -35,7 +17,7 @@ public class ViewerPlugin extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		methods.removeChestContents();
+		methods.clearMaps();
 	}
 	
 }

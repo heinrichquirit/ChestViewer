@@ -71,8 +71,8 @@ public class ChestViewerListener implements Listener {
 						if (sign.getLine(1).equals(ChatColor.DARK_BLUE + "View-Only")) {
 							if (methods.isSingleChest(chest)) {
 								methods.saveSingleChest(chest);
-								methods.sendChestView(player, chest);
-								methods.removeChestContents();
+								methods.sendSingleChestView(player, chest);
+								methods.removeSingleContents(chest);
 								player.sendMessage(GREEN + "You're now viewing the chest.");
 							}
 						}
@@ -81,8 +81,8 @@ public class ChestViewerListener implements Listener {
 						if (sign.getLine(1).equals(ChatColor.DARK_BLUE + "View-Only")) {
 							if (methods.isSingleChest(chest)) {
 								methods.saveSingleChest(chest);
-								methods.sendChestView(player, chest);
-								methods.removeChestContents();
+								methods.sendSingleChestView(player, chest);
+								methods.removeSingleContents(chest);
 								player.sendMessage(GREEN + "You're now viewing the chest.");
 							}
 						}
